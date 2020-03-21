@@ -1,7 +1,7 @@
 import itertools, string
 
 def generate_strings(length):
-    chars = string.ascii_letters + string.digits
+    chars = string.ascii_letters + string.digits # + string.punctuation
     for item in itertools.product(chars, repeat = length):
         yield "".join(item)
 
